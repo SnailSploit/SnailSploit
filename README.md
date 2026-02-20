@@ -1,3 +1,4 @@
+<img src="banner.png" alt="SnailSploit Banner" width="100%"/>
 <div align="center">
 
 # SnailSploit
