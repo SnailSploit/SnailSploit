@@ -2,7 +2,7 @@
 
 # SnailSploit
 
-**GenAI Security Researcher · AI Red Teamer · Adversarial Psychology**
+**GenAI Security Researcher · AI Red Teamer · Offensive Security Writer**
 
 *Social engineering and prompt injection are the same attack. Different substrate.*
 
@@ -20,7 +20,7 @@ I'm Kai Aizen — an independent GenAI security researcher exploring **inherited
 
 This principle shapes everything I build.
 
-`Creator of AATMF · Author of Adversarial Minds · NVD Contributor · OWASP GenAI Security Project`
+`Creator of AATMF · Author of Adversarial Minds · NVD Contributor · Offensive Security Writer @ Hakin9`
 
 ---
 
@@ -28,8 +28,12 @@ This principle shapes everything I build.
 
 | Project | Description |
 |---------|-------------|
-| [**AATMF**](https://github.com/SnailSploit/AATMF-Adversarial-AI-Threat-Modeling-Framework) | Adversarial AI Threat Modeling Framework — 14 tactics, 40+ techniques for AI/LLM red teaming. Maps to OWASP LLM Top 10, NIST AI RMF, MITRE ATLAS. Accepted into OWASP GenAI Security Project roadmap 2026. |
-| [**ChatGPT-DNS-Exfill**](https://github.com/SnailSploit/ChatGPT-DNS-Exfill) | DNS exfiltration via ChatGPT Canvas — demonstrating how rendered content triggers DNS lookups to exfiltrate data without HTTP requests. |
+| [**AATMF**](https://github.com/SnailSploit/AATMF-Adversarial-AI-Threat-Modeling-Framework) | Adversarial AI Threat Modeling Framework — 15 tactics, 240 techniques, 2,152+ attack procedures. Maps to OWASP LLM Top-10, NIST AI RMF, MITRE ATLAS. |
+| [**LLM Red Teamer's Playbook**](https://github.com/SnailSploit/The-LLM-Red-Teamer-s-Playbook) | Diagnostic methodology for bypassing LLM defense layers — input filters → alignment → identity → output → agentic trust. Maps to AATMF v3. |
+## Experiments & PoCs
+| Project | Description |
+|---|---|
+| [**ChatGPT-DNS-Exfill**](https://github.com/SnailSploit/ChatGPT-DNS-Exfill) | DNS exfiltration via ChatGPT Canvas — rendered content triggers DNS lookups without HTTP requests. |
 | [**chatgpt-rce-dns**](https://github.com/SnailSploit/chatgpt-rce-dns) | Validating DNS exfiltration and Python Pickle RCE attack chains in AI code execution sandboxes. |
 
 ## Offensive Tools
