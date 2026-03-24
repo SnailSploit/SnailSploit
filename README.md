@@ -77,33 +77,6 @@ I'm Kai Aizen — independent security researcher focused on adversarial AI, LLM
 |---------|-----------|------|:------:|
 | [io_uring/zcrx Race Condition](https://snailsploit.com/security-research/general/io-uring-zcrx-race-condition/) | Linux kernel io_uring/zcrx | Race Condition → Double-Free → OOB Write | ✅ [Upstream](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=003049b1c4fb8aabb93febb7d1e49004f6ad653b), backported to [v6.18.16](https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.18.16) |
 
----
-
-<div align="center">
-
-[![SnailSploit](https://img.shields.io/badge/Read_the_research-snailsploit.com-black?style=for-the-badge)](https://snailsploit.com)
-
-</div>
-
----<img src="banner.png" alt="SnailSploit Banner" width="100%"/>
-
-<div align="center">
-
-# SnailSploit
-
-**GenAI Security Researcher · AI Red Teamer · Offensive Security Writer**
-
-[![Website](https://img.shields.io/badge/snailsploit.com-000?style=for-the-badge&logo=astro&logoColor=white)](https://snailsploit.com)
-[![The Jailbreak Chef](https://img.shields.io/badge/The_Jailbreak_Chef-FF6B35?style=for-the-badge&logo=fireship&logoColor=white)](https://thejailbreakchef.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kaiaizen)
-
-</div>
-
----
-
-I'm Kai Aizen — independent security researcher focused on adversarial AI, LLM red teaming, and the intersection of social engineering and prompt injection. I build frameworks and tooling for structured AI safety testing.
-
-`Creator of AATMF · Author of Adversarial Minds · 8 CVEs · Linux kernel contributor · Hakin9 Contributing Author`
 
 ---
 
@@ -135,32 +108,7 @@ I'm Kai Aizen — independent security researcher focused on adversarial AI, LLM
 | [**Claude-Red**](https://github.com/SnailSploit/Claude-Red) | Curated offensive security skills library for the Claude skills system. |
 | [**SnailObfuscator**](https://github.com/SnailSploit/SnailObfuscator) | Structurally-aware code obfuscation engine. |
 
-## 🛡️ CVEs
-
-| CVE | Target | Type | Severity |
-|-----|--------|------|:--------:|
-| [CVE-2026-3288](https://github.com/SnailSploit/CVE-2026-3288) | ingress-nginx | Config Injection → RCE | **High (8.8)** |
-| [CVE-2026-31899](https://github.com/SnailSploit/CVE-2026-31899) | [CairoSVG](https://github.com/Kozea/CairoSVG/security/advisories/GHSA-f38f-5xpm-9r7c) | Exponential DoS — recursive <use> amplification | **High (7.5)** |
-| [CVE-2025-9776](https://github.com/SnailSploit/CVE-2025-9776) | CatFolders | SQL Injection via CSV Import | Medium (6.5) |
-| [CVE-2025-12163](https://github.com/SnailSploit/CVE-2025-12163) | OmniPress | Stored XSS | Medium (6.4) |
-| [CVE-2025-11171](https://github.com/SnailSploit/CVE-2025-11171) | Chartify | Missing Authentication | Medium (5.3) |
-| [CVE-2025-11174](https://github.com/SnailSploit/CVE-2025-11174) | Document Library Lite | Unauth Info Disclosure | Medium (5.3) |
-| [CVE-2025-12030](https://github.com/SnailSploit/CVE-2025-12030) | ACF to REST API | IDOR | Medium (4.3) |
-| [CVE-2026-1208](https://github.com/SnailSploit/CVE-2026-1208) | Welcart | CSRF to Settings Update | Medium (4.3) |
-
-## 🔓 Security Advisories
-
-| Advisory | Target | Type | Severity |
-|----------|--------|------|:--------:|
-| [GHSA-j425-whc4-4jgc](https://github.com/SnailSploit/OpenClaw-Env-Injection) | [OpenClaw](https://github.com/openclaw/openclaw/security/advisories/GHSA-j425-whc4-4jgc) (309k⭐) | system.run env override RCE — allowlist bypass via GIT_SSH_COMMAND, editor hooks, GIT_CONFIG_* | Medium (6.3) |
-
-## 🐧 Kernel Research
-
-| Finding | Component | Type | Status |
-|---------|-----------|------|:------:|
-| [io_uring/zcrx Race Condition](https://snailsploit.com/security-research/general/io-uring-zcrx-race-condition/) | Linux kernel io_uring/zcrx | Race Condition → Double-Free → OOB Write | ✅ [Upstream](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=003049b1c4fb8aabb93febb7d1e49004f6ad653b), backported to [v6.18.16](https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.18.16) |
-
----
+##
 
 <div align="center">
 
