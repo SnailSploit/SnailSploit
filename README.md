@@ -59,7 +59,6 @@ I'm Kai Aizen — independent security researcher focused on adversarial AI, LLM
 | [CVE-2026-33693](https://github.com/SnailSploit/CVE-2026-33693) | [Lemmy](https://github.com/LemmyNet/activitypub-federation-rust/security/advisories/GHSA-q537-8fr5-cw35) | SSRF — 0.0.0.0 bypass in ActivityPub federation | Medium (6.5) |
 | [CVE-2026-32885](https://github.com/SnailSploit/CVE-2026-32885) | [ddev](https://github.com/ddev/ddev/security/advisories/GHSA-x2xq-qhjf-5mvg) | ZipSlip — path traversal in archive extraction | Medium (6.5) |
 | [CVE-2025-12163](https://github.com/SnailSploit/CVE-2025-12163) | OmniPress | Stored XSS | Medium (6.4) |
-| [CVE-2026-32794](https://github.com/SnailSploit/CVE-2026-32794) | [Apache Airflow](https://github.com/apache/airflow/pull/63704) | TLS Certificate Verification Bypass — Databricks Provider | Medium |
 | [CVE-2025-11171](https://github.com/SnailSploit/CVE-2025-11171) | Chartify | Missing Authentication | Medium (5.3) |
 | [CVE-2025-11174](https://github.com/SnailSploit/CVE-2025-11174) | Document Library Lite | Unauth Info Disclosure | Medium (5.3) |
 | [CVE-2025-12030](https://github.com/SnailSploit/CVE-2025-12030) | ACF to REST API | IDOR | Medium (4.3) |
