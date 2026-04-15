@@ -18,42 +18,50 @@ I'm Kai Aizen — independent security researcher focused on adversarial AI, LLM
 
 <div align="center">
 
-`Creator of AATMF` · `Author of Adversarial Minds` · `19 CVEs` · `Linux kernel contributor` · `Hakin9 Contributing Author`
+`Creator of AATMF` · `Author of Adversarial Minds` · `22 CVEs` · `Linux kernel contributor` · `Hakin9 Contributing Author`
 
 </div>
 
 ---
 
-## 🛡️ CVEs — 19 Published
+## 🛡️ CVEs — 22 Published
+
+#### 🟣 Critical Severity
+
+| # | CVE | Target | Type | CVSS |
+|:-:|-----|--------|------|:----:|
+| 1 | [CVE-2026-3596](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/riaxe-product-customizer/riaxe-product-customizer-212-missing-authorization-to-unauthenticated-arbitrary-options-update-to-privilege-escalation-via-install-imprint-ajax-action) | Riaxe Product Customizer (WP) | Missing Authorization → Unauthenticated Arbitrary Options Update → Privilege Escalation via install-imprint AJAX action | **9.8** |
 
 #### 🔴 High Severity
 
 | # | CVE | Target | Type | CVSS |
 |:-:|-----|--------|------|:----:|
-| 1 | [CVE-2026-3288](https://github.com/SnailSploit/CVE-2026-3288) | [Kubernetes ingress-nginx](https://github.com/advisories/GHSA-c56h-j8gw-3v54) | Config Injection → RCE | **8.8** |
-| 2 | [CVE-2026-1313](https://github.com/SnailSploit/CVE-2026-1313) | MimeTypes Link Icons (WP) | SSRF via crafted post content | **8.3** |
-| 3 | [CVE-2026-30911](https://github.com/SnailSploit/CVE-2026-30911) | [Apache Airflow Core](https://github.com/apache/airflow) | Missing Authorization — HITL Endpoints (v3.1.0–3.1.7) | **8.1** |
-| 4 | [CVE-2026-31899](https://github.com/SnailSploit/CVE-2026-31899) | [CairoSVG](https://github.com/Kozea/CairoSVG/security/advisories/GHSA-f38f-5xpm-9r7c) | Exponential DoS — recursive `<use>` amplification | **7.5** |
-| 5 | [CVE-2026-32809](https://github.com/SnailSploit/CVE-2026-32809) | [ouch-org/ouch](https://github.com/ouch-org/ouch/security/advisories/GHSA-pcw6-cg54-qvm8) | Symlink escape → arbitrary file overwrite | **7.4** |
-| 6 | *(pending)* | TelSender (WP) | Unauthenticated Stored XSS via Telegram Chat Title | **7.2** |
+| 2 | [CVE-2026-3288](https://github.com/SnailSploit/CVE-2026-3288) | [Kubernetes ingress-nginx](https://github.com/advisories/GHSA-c56h-j8gw-3v54) | Config Injection → RCE | **8.8** |
+| 3 | [CVE-2026-1313](https://github.com/SnailSploit/CVE-2026-1313) | MimeTypes Link Icons (WP) | SSRF via crafted post content | **8.3** |
+| 4 | [CVE-2026-30911](https://github.com/SnailSploit/CVE-2026-30911) | [Apache Airflow Core](https://github.com/apache/airflow) | Missing Authorization — HITL Endpoints (v3.1.0–3.1.7) | **8.1** |
+| 5 | [CVE-2026-31899](https://github.com/SnailSploit/CVE-2026-31899) | [CairoSVG](https://github.com/Kozea/CairoSVG/security/advisories/GHSA-f38f-5xpm-9r7c) | Exponential DoS — recursive `<use>` amplification | **7.5** |
+| 6 | [CVE-2026-3599](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/riaxe-product-customizer/riaxe-product-customizer-212-unauthenticated-sql-injection-via-options-parameter-keys-in-product-data) | Riaxe Product Customizer (WP) | Unauthenticated SQL Injection via options parameter keys in product-data | **7.5** |
+| 7 | [CVE-2026-32809](https://github.com/SnailSploit/CVE-2026-32809) | [ouch-org/ouch](https://github.com/ouch-org/ouch/security/advisories/GHSA-pcw6-cg54-qvm8) | Symlink escape → arbitrary file overwrite | **7.4** |
+| 8 | *(pending)* | TelSender (WP) | Unauthenticated Stored XSS via Telegram Chat Title | **7.2** |
 
 #### 🟡 Medium Severity
 
 | # | CVE | Target | Type | CVSS |
 |:-:|-----|--------|------|:----:|
-| 7 | [CVE-2025-9776](https://github.com/SnailSploit/CVE-2025-9776) | CatFolders (WP) | SQL Injection via CSV Import | 6.5 |
-| 8 | [CVE-2026-33693](https://github.com/SnailSploit/CVE-2026-33693) | [Lemmy / activitypub-federation-rust](https://github.com/LemmyNet/activitypub-federation-rust/security/advisories/GHSA-q537-8fr5-cw35) | SSRF — 0.0.0.0 bypass | 6.5 |
-| 9 | [CVE-2026-32885](https://github.com/SnailSploit/CVE-2026-32885) | [ddev/ddev](https://github.com/ddev/ddev/security/advisories/GHSA-x2xq-qhjf-5mvg) | ZipSlip path traversal in archive extraction | 6.5 |
-| 10 | [CVE-2025-12163](https://github.com/SnailSploit/CVE-2025-12163) | Omnipress (WP) | Stored XSS | 6.4 |
-| 11 | [CVE-2026-0811](https://github.com/SnailSploit/CVE-2026-0811) | Advanced CF7 DB (WP) | CSRF → Form Entry Deletion | 5.4 |
-| 12 | [CVE-2026-1314](https://github.com/SnailSploit/CVE-2026-1314) | 3D FlipBook (WP) | Missing Auth → Data Exposure | 5.3 |
-| 13 | [CVE-2026-3594](https://github.com/SnailSploit/CVE-2026-3594) | Riaxe Product Customizer (WP) | Unauthenticated Info Disclosure via /orders | 5.3 |
-| 14 | [CVE-2025-11171](https://github.com/SnailSploit/CVE-2025-11171) | Chartify (WP) | Missing Authentication for Admin Function | 5.3 |
-| 15 | [CVE-2025-11174](https://github.com/SnailSploit/CVE-2025-11174) | Document Library Lite (WP) | Missing Auth → Info Disclosure | 5.3 |
-| 16 | [CVE-2026-32794](https://github.com/SnailSploit/CVE-2026-32794) | [Apache Airflow Databricks Provider](https://github.com/apache/airflow/security/advisories) | TLS Certificate Verification Bypass → MitM | 4.8 |
-| 17 | [CVE-2026-0814](https://github.com/SnailSploit/CVE-2026-0814) | Advanced CF7 DB (WP) | Missing Auth → Subscriber+ Export | 4.3 |
-| 18 | [CVE-2025-12030](https://github.com/SnailSploit/CVE-2025-12030) | ACF to REST API (WP) | IDOR → Contributor+ Field Modification | 4.3 |
-| 19 | [CVE-2026-1208](https://github.com/SnailSploit/CVE-2026-1208) | Welcart (WP) | CSRF → Settings Update | 4.3 |
+| 9 | [CVE-2025-9776](https://github.com/SnailSploit/CVE-2025-9776) | CatFolders (WP) | SQL Injection via CSV Import | 6.5 |
+| 10 | [CVE-2026-33693](https://github.com/SnailSploit/CVE-2026-33693) | [Lemmy / activitypub-federation-rust](https://github.com/LemmyNet/activitypub-federation-rust/security/advisories/GHSA-q537-8fr5-cw35) | SSRF — 0.0.0.0 bypass | 6.5 |
+| 11 | [CVE-2026-32885](https://github.com/SnailSploit/CVE-2026-32885) | [ddev/ddev](https://github.com/ddev/ddev/security/advisories/GHSA-x2xq-qhjf-5mvg) | ZipSlip path traversal in archive extraction | 6.5 |
+| 12 | [CVE-2025-12163](https://github.com/SnailSploit/CVE-2025-12163) | Omnipress (WP) | Stored XSS | 6.4 |
+| 13 | [CVE-2026-0811](https://github.com/SnailSploit/CVE-2026-0811) | Advanced CF7 DB (WP) | CSRF → Form Entry Deletion | 5.4 |
+| 14 | [CVE-2026-1314](https://github.com/SnailSploit/CVE-2026-1314) | 3D FlipBook (WP) | Missing Auth → Data Exposure | 5.3 |
+| 15 | [CVE-2026-3594](https://github.com/SnailSploit/CVE-2026-3594) | Riaxe Product Customizer (WP) | Unauthenticated Info Disclosure via /orders | 5.3 |
+| 16 | [CVE-2026-3595](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/riaxe-product-customizer/riaxe-product-customizer-212-unauthenticated-arbitrary-user-deletion-via-user-id-parameter) | Riaxe Product Customizer (WP) | Unauthenticated Arbitrary User Deletion via user_id parameter | 5.3 |
+| 17 | [CVE-2025-11171](https://github.com/SnailSploit/CVE-2025-11171) | Chartify (WP) | Missing Authentication for Admin Function | 5.3 |
+| 18 | [CVE-2025-11174](https://github.com/SnailSploit/CVE-2025-11174) | Document Library Lite (WP) | Missing Auth → Info Disclosure | 5.3 |
+| 19 | [CVE-2026-32794](https://github.com/SnailSploit/CVE-2026-32794) | [Apache Airflow Databricks Provider](https://github.com/apache/airflow/security/advisories) | TLS Certificate Verification Bypass → MitM | 4.8 |
+| 20 | [CVE-2026-0814](https://github.com/SnailSploit/CVE-2026-0814) | Advanced CF7 DB (WP) | Missing Auth → Subscriber+ Export | 4.3 |
+| 21 | [CVE-2025-12030](https://github.com/SnailSploit/CVE-2025-12030) | ACF to REST API (WP) | IDOR → Contributor+ Field Modification | 4.3 |
+| 22 | [CVE-2026-1208](https://github.com/SnailSploit/CVE-2026-1208) | Welcart (WP) | CSRF → Settings Update | 4.3 |
 
 ## 🔓 Security Advisories (GHSAs)
 
