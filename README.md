@@ -12,8 +12,8 @@
 [![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/SnailSploit)
 
 ![Linux Kernel](https://img.shields.io/badge/Linux_Kernel-5_mainline_patches-A81D33?style=flat-square&logo=linux&logoColor=white)
-![CVEs](https://img.shields.io/badge/CVEs-22_published-red?style=flat-square)
-![GHSA](https://img.shields.io/badge/GHSA-1_advisory-orange?style=flat-square)
+![CVEs](https://img.shields.io/badge/CVEs-23_published-red?style=flat-square)
+![GHSA](https://img.shields.io/badge/GHSA-2_advisories-orange?style=flat-square)
 ![Hakin9](https://img.shields.io/badge/Hakin9-Contributing_Author-blueviolet?style=flat-square)
 ![NVD](https://img.shields.io/badge/MITRE/NVD-Contributor-005DAA?style=flat-square)
 
