@@ -107,6 +107,7 @@ Sorted by blast radius — shared infrastructure first, single-vendor plugins la
 
 | CVE | Target | Lang | Type | Severity |
 | --- | --- | --- | --- | --- |
+| [CVE-2026-43884](https://github.com/WWBN/AVideo/security/advisories/GHSA-2hch-c97c-g99x) | WWBN/AVideo | PHP | SSRF — HTTP redirect & DNS rebinding bypass of `isSSRFSafeURL()` | **High (7.7)** |
 | [CVE-2026-31899](https://nvd.nist.gov/vuln/detail/CVE-2026-31899) | CairoSVG | Python | Exponential DoS — recursive amplification | **High (7.5)** |
 | [CVE-2026-32809](https://nvd.nist.gov/vuln/detail/CVE-2026-32809) | ouch-org/ouch | Rust | Symlink escape — arbitrary file overwrite | **High (7.4)** |
 | [CVE-2026-33693](https://nvd.nist.gov/vuln/detail/CVE-2026-33693) | activitypub-federation-rust | Rust | SSRF — `0.0.0.0` bypass in fediverse federation | Medium (6.5) |
@@ -140,6 +141,7 @@ Plus: TelSender — stored XSS that resulted in [vendor-side plugin removal](htt
 
 | Advisory | Target | Type | Severity |
 | --- | --- | --- | --- |
+| [GHSA-2hch-c97c-g99x](https://github.com/WWBN/AVideo/security/advisories/GHSA-2hch-c97c-g99x) | [WWBN/AVideo](https://github.com/WWBN/AVideo) | SSRF Protection Bypass via HTTP Redirect & DNS Rebinding in `isSSRFSafeURL()` (CVE-2026-43884) | **High (7.7)** |
 | [GHSA-j425-whc4-4jgc](https://github.com/advisories/GHSA-j425-whc4-4jgc) | [OpenClaw](https://github.com/openclaw/openclaw/security/advisories/GHSA-j425-whc4-4jgc) | `system.run` env override RCE — allowlist bypass via `GIT_SSH_COMMAND`, editor hooks, `GIT_CONFIG_*` | Medium (6.3) |
 
 ---
