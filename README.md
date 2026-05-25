@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Ai Decurity Researcher · Red Teamer · Offensive Security </strong>
+  <strong>adversarial ai research · llm red teaming · kernel</strong>
 </p>
 
 <p align="center">
@@ -17,18 +17,13 @@
 
 ---
 
-I'm Kai Aizen — independent Offensive security researcher. I break production systems — Linux kernel, Kubernetes, container runtimes, OSS libraries, and the LLMs increasingly woven through them — then publish the methodology.
+same attack. different substrate.
 
-Social engineering and prompt injection are the same attack class, executed against different substrates. The frameworks, tooling, and research below all trace back to that thesis.
-
-```
-Creator of AATMF / P.R.O.M.P.T / SEF · Author of Adversarial Minds
-34 CVEs · 5 mainlined Linux kernel patches · Hakin9 contributing author
-```
+snailsploit is an independent adversarial research group — kai aizen + avraham shemesh.
 
 ---
 
-## 🔴 Frameworks & Tooling
+## frameworks & tooling
 
 | Project | Description |
 |---|---|
@@ -44,9 +39,9 @@ Creator of AATMF / P.R.O.M.P.T / SEF · Author of Adversarial Minds
 
 ---
 
-## 🧪 Research
+## research
 
-Published at [snailsploit.com](https://snailsploit.com), Hakin9 Magazine, and Medium.
+published at [snailsploit.com](https://snailsploit.com), Hakin9 Magazine, and Medium.
 
 | Paper | Summary |
 |---|---|
@@ -70,9 +65,9 @@ Published at [snailsploit.com](https://snailsploit.com), Hakin9 Magazine, and Me
 
 ---
 
-## 🛡️ CVEs (34)
+## CVEs (34)
 
-Sorted by target reach — core infrastructure first, WordPress plugins last. Severity is the secondary sort within each tier.
+sorted by target reach — core infrastructure first, WordPress plugins last. severity is the secondary sort within each tier.
 
 | # | CVE | Target | Type | Severity | Status |
 |---|---|---|---|---|---|
@@ -113,27 +108,27 @@ Sorted by target reach — core infrastructure first, WordPress plugins last. Se
 
 ---
 
-## 🐧 Linux Kernel
+## linux kernel
 
-Five patches across io_uring, IPC, Bluetooth, RDMA, and networking — all mainlined through the standard kernel maintainer process.
+five patches across io_uring, IPC, Bluetooth, RDMA, and networking — all mainlined through the standard kernel maintainer process.
 
 | # | Subsystem | Vulnerability | Status |
 |---|---|---|---|
-| 35 | `io_uring/zcrx` | Fix `user_ref` race between scrub and refill paths → double-free → OOB write (CVE-2026-43121) | ✅ Mainlined 7.0-rc1 |
-| 36 | `net/tipc` | `tipc_mon_peer_up`/`down`/`remove_peer` UAF | ✅ Mainlined |
-| 37 | `Bluetooth/hci_conn` | UAF in `create_big_sync` and `create_big_complete` | ✅ Mainlined |
-| 38 | `RDMA/ionic` | Bound `node_desc` sysfs read with `%.64s` | ✅ Mainlined 2026-04-20 |
-| 39 | `net/rtnetlink` | Zero `ifla_vf_broadcast` to avoid stack infoleak | ✅ Mainlined |
+| 35 | `io_uring/zcrx` | Fix `user_ref` race between scrub and refill paths → double-free → OOB write (CVE-2026-43121) | Mainlined 7.0-rc1 |
+| 36 | `net/tipc` | `tipc_mon_peer_up`/`down`/`remove_peer` UAF | Mainlined |
+| 37 | `Bluetooth/hci_conn` | UAF in `create_big_sync` and `create_big_complete` | Mainlined |
+| 38 | `RDMA/ionic` | Bound `node_desc` sysfs read with `%.64s` | Mainlined 2026-04-20 |
+| 39 | `net/rtnetlink` | Zero `ifla_vf_broadcast` to avoid stack infoleak | Mainlined |
 
-All patches on [lore.kernel.org →](https://lore.kernel.org/all/?q=Kai+Aizen)
+all patches on [lore.kernel.org →](https://lore.kernel.org/all/?q=Kai+Aizen)
 
 ---
 
-## 🔓 GHSAs, Vendor Findings & Bounties
+## GHSAs, vendor findings & bounties
 
 | # | ID | Target | Type | Status |
 |---|---|---|---|---|
-| 40 | — | TelSender (WP) | Unauthenticated Stored XSS via Telegram Chat Title (7.2) | Plugin shut down by vendor |
+| 40 | — | [TelSender (WP)](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/telsender) | Unauthenticated Stored XSS via Telegram Chat Title (7.2) | Plugin taken down by maintainer |
 | 41 | [GHSA-j425-whc4-4jgc](https://github.com/advisories/GHSA-j425-whc4-4jgc) | OpenClaw | `system.run` env override RCE — allowlist bypass (6.3) | Published |
 | 42 | [GHSA-gxhx-2686-5h9g](https://github.com/slack-go/slack/security/advisories/GHSA-gxhx-2686-5h9g) | slack-go/slack | Security advisory | Published |
 | 43 | [GHSA-x426-x7cc-3fpc](https://github.com/advisories/GHSA-x426-x7cc-3fpc) | @hapi/wreck (npm) | Credential header leak on cross-port/cross-scheme redirect (CVE-2026-48022) | Published |
@@ -141,7 +136,7 @@ All patches on [lore.kernel.org →](https://lore.kernel.org/all/?q=Kai+Aizen)
 
 ---
 
-## 📊 Summary
+## summary
 
 | Metric | Count |
 |---|---|
@@ -152,11 +147,11 @@ All patches on [lore.kernel.org →](https://lore.kernel.org/all/?q=Kai+Aizen)
 
 > CVE-2026-43121 is the assigned CVE for the mainlined `io_uring/zcrx` patch — counted once under CVEs (#3); it is the same finding as kernel patch #35. CVE-2026-48022 (@hapi/wreck) is counted once under CVEs (#15); its GHSA (#43) is the same finding.
 
-**Sources of record:** [Wordfence](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/kai-aizen) · [GHSA Credit](https://github.com/advisories?query=credit%3ASnailSploit) · [GitHub](https://github.com/SnailSploit) · [lore.kernel.org](https://lore.kernel.org/all/?q=Kai+Aizen)
+**sources of record:** [Wordfence](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/kai-aizen) · [GHSA Credit](https://github.com/advisories?query=credit%3ASnailSploit) · [GitHub](https://github.com/SnailSploit) · [lore.kernel.org](https://lore.kernel.org/all/?q=Kai+Aizen)
 
 ---
 
-## 🛠️ More Tools
+## more tools
 
 | Tool | Description |
 |---|---|
