@@ -19,7 +19,13 @@
 
 same attack. different substrate.
 
-snailsploit is an independent adversarial research group — kai aizen + avraham shemesh.
+snailsploit is an independent adversarial research group.
+
+**frameworks.** AATMF, SEF, P.R.O.M.P.T — adversarial ai threat modeling and social engineering taxonomies.
+**CVEs.** 60+ published across linux kernel, kubernetes, oss libraries, and wordpress plugins.
+**tools.** open-source offensive tooling — recon, scanning, exploitation, obfuscation.
+
+[snailsploit.com →](https://snailsploit.com)
 
 ---
 
