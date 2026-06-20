@@ -71,7 +71,7 @@ published at [snailsploit.com](https://snailsploit.com), Hakin9 Magazine, and Me
 
 ---
 
-## CVEs (37)
+## CVEs (43)
 
 sorted by target reach — core infrastructure first, WordPress plugins last. severity is the secondary sort within each tier.
 
