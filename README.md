@@ -10,13 +10,13 @@ same attack. different substrate.
 
 snailsploit is an independent adversarial research group — vulnerability research, framework development, and offensive tooling across kernels, language models, and everything between them.
 
-61 published CVEs · 3 linux kernel CVEs · 5 mainlined kernel patches · 27 distinct targets
+71 publicly attributable CVEs · 3 linux kernel CVEs · 5 mainlined kernel patches · 27+ distinct targets
 
 [snailsploit.com →](https://snailsploit.com)
 
 ---
 
-## CVEs (61)
+## CVEs (71)
 
 sorted by target class — infrastructure and AI first, then libraries, then CMS plugins. severity is the secondary sort within each tier.
 
@@ -115,6 +115,27 @@ sorted by target class — infrastructure and AI first, then libraries, then CMS
 | 59 | [CVE-2025-12030](https://nvd.nist.gov/vuln/detail/CVE-2025-12030) | ACF to REST API | IDOR | Medium (4.3) | Published |
 | 60 | [CVE-2026-0814](https://nvd.nist.gov/vuln/detail/CVE-2026-0814) | Advanced CF7 DB | Missing auth — subscriber+ export | Medium (4.3) | Published |
 | 61 | [CVE-2026-1208](https://nvd.nist.gov/vuln/detail/CVE-2026-1208) | Welcart | CSRF → settings update | Medium (4.3) | Published |
+| 62 | [CVE-2026-15298](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/telsender) | TelSender | Unauthenticated stored XSS via Telegram chat title | High (7.2) | Published |
+
+---
+
+## expanded attribution corpus
+
+The CVE table above contains the core SnailSploit inventory plus the 16th WordPress finding. The following **9 additional CVEs** were identified through independent attribution sources (vendor/CNA/upstream/GitHub advisory records) during the broader reconciliation pass. They are included in the **71-CVE public attribution total** and are intentionally separated here so the provenance of the expanded count is explicit.
+
+| CVE | Target | Attribution / source trail | Status |
+|------|--------|---------------------------|--------|
+| [CVE-2026-52778](https://snailsploit.com/cves) | YesWiki | SnailSploit disclosure ledger | Attributed |
+| [CVE-2026-61308](https://www.oracle.com/security-alerts/cspuaug2026.html) | Oracle Java / `HttpURLConnection` | Oracle Critical Patch Update explicitly credits Kai Aizen | Confirmed |
+| [CVE-2026-69261](https://snailsploit.com/cves) | Git LFS | SnailSploit disclosure ledger | Attributed |
+| [CVE-2026-8661](https://snailsploit.com/cves) | Rapid7 InsightConnect | SnailSploit disclosure ledger | Attributed |
+| [CVE-2026-54076](https://github.com/ArcadeData/arcadedb/security/advisories/GHSA-vg6x-6pg9-6qwg) | ArcadeDB | Upstream GitHub advisory explicitly credits Kai Aizen / SnailSploit | Confirmed |
+| [CVE-2026-17351](https://www.pgadmin.org/docs/pgadmin4/9.17/release_notes_9_17.html) | pgAdmin 4 | Upstream pgAdmin release notes report Kai Aizen | Confirmed |
+| [CVE-2026-70445](https://www.jenkins.io/security/advisory/2026-08-05/) | Jenkins Sauce OnDemand Plugin | Jenkins security advisory credits Kai Aizen / SnailSploit | Confirmed |
+| [CVE-2026-19017](https://app.opencve.io/cve/CVE-2026-19017) | HashiCorp Consul | CNA record explicitly credits Kai Aizen / SnailSploit | Confirmed |
+| [CVE-2026-60087](https://www.vulncheck.com/advisories/praisonai-before-tool-approval-cache-bypass) | PraisonAI | Independent advisory databases credit SnailSploit | Confirmed |
+
+**Attribution note:** “71” is the expanded public-attribution corpus, not the number currently enumerated in the SnailSploit GitHub repository alone. The GitHub repository remains a 61-CVE core inventory; the expanded total incorporates independently located CVE records and the additional WordPress finding.
 
 ---
 
@@ -197,13 +218,13 @@ published at [snailsploit.com](https://snailsploit.com), [Hakin9 Magazine](https
 
 | Metric | Count |
 |--------|-------|
-| Published / assigned CVEs | 61 |
+| Publicly attributable CVEs | 71 |
 | — critical | 5 |
 | — high | 18 |
 | Distinct targets | 27 |
 | Mainlined linux kernel patches | 5 |
 | Kernel CVEs | 3 |
-| GHSAs / vendor disclosures / bounties | 5 |
+| GHSAs / vendor disclosures / bounties | 5+ |
 | Published frameworks | 3 (AATMF, SEF, P.R.O.M.P.T) |
 | Open-source tools | 11 |
 
