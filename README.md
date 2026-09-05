@@ -10,13 +10,13 @@ same attack. different substrate.
 
 snailsploit is an independent adversarial research group — vulnerability research, framework development, and offensive tooling across kernels, language models, and everything between them.
 
-71 publicly attributable CVEs · 3 linux kernel CVEs · 5 mainlined kernel patches · 27+ distinct targets
+92 publicly attributable CVEs · 4 linux kernel CVEs · 5 mainlined kernel patches · 27+ distinct targets
 
 [snailsploit.com →](https://snailsploit.com)
 
 ---
 
-## CVEs (71)
+## CVEs (92)
 
 sorted by target class — infrastructure and AI first, then libraries, then CMS plugins. severity is the secondary sort within each tier.
 
@@ -44,84 +44,85 @@ sorted by target class — infrastructure and AI first, then libraries, then CMS
 | # | CVE | Target | Type | Severity | Status |
 |---|-----|--------|------|----------|--------|
 | 15 | [CVE-2026-43121](https://nvd.nist.gov/vuln/detail/CVE-2026-43121) | Linux Kernel io_uring/zcrx | `user_ref` race → double-free → OOB write | Medium (4.7) | Published |
-| 16 | [CVE-2026-46132](https://www.cve.org/CVERecord?id=CVE-2026-46132) | Linux Kernel net/rtnetlink | `ifla_vf_broadcast` stack infoleak via Netlink RTM_GETLINK | Low | Published |
-| 17 | [CVE-2026-53371](https://www.cve.org/CVERecord?id=CVE-2026-53371) | Linux Kernel RDMA/ionic | Unbounded `%s` in `hca_type_show` reads past `node_desc[64]` — userspace-triggerable OOB read via sysfs | — | Published |
+| 16 | [CVE-2026-46111](https://www.cve.org/CVERecord?id=CVE-2026-46111) | Linux Kernel Bluetooth/hci_conn | Use-After-Free in `create_big_sync` and `create_big_complete` handlers | Moderate (5.5) | Mainlined |
+| 17 | [CVE-2026-46132](https://www.cve.org/CVERecord?id=CVE-2026-46132) | Linux Kernel net/rtnetlink | `ifla_vf_broadcast` stack infoleak via Netlink RTM_GETLINK | Low | Published |
+| 18 | [CVE-2026-53371](https://www.cve.org/CVERecord?id=CVE-2026-53371) | Linux Kernel RDMA/ionic | Unbounded `%s` in `hca_type_show` reads past `node_desc[64]` — userspace-triggerable OOB read via sysfs | — | Published |
 
 ### infrastructure & orchestration
 
 | # | CVE | Target | Type | Severity | Status |
 |---|-----|--------|------|----------|--------|
-| 18 | [CVE-2026-3288](https://nvd.nist.gov/vuln/detail/CVE-2026-3288) | Kubernetes ingress-nginx | Config injection → RCE | **High (8.8)** | Published |
-| 19 | [CVE-2026-30911](https://nvd.nist.gov/vuln/detail/CVE-2026-30911) | Apache Airflow Core | Missing auth (HITL) | **High (8.1)** | Published |
-| 20 | [CVE-2026-32794](https://nvd.nist.gov/vuln/detail/CVE-2026-32794) | Apache Airflow (Databricks Provider) | TLS verification bypass → MitM | Medium (4.8) | Published |
-| 21 | [CVE-2026-55070](https://github.com/argoproj/argo-workflows/security/advisories/GHSA-rcgr-27rh-g56w) | argoproj/argo-workflows | Informer-cache auth-bypass fix incomplete — Lint/Create resolve templates without per-caller auth (CWE-285) | Moderate (5.3) | CVE Assigned |
-| 22 | [CVE-2026-48130](https://github.com/tektoncd/pipeline/security/advisories/GHSA-q6jr-jfqg-8m28) | tektoncd/pipeline | Hub resolver reads HTTP response body via unbounded `io.ReadAll` → OOM DoS (CWE-770) | Moderate (6.5) | CVE Assigned |
+| 19 | [CVE-2026-3288](https://nvd.nist.gov/vuln/detail/CVE-2026-3288) | Kubernetes ingress-nginx | Config injection → RCE | **High (8.8)** | Published |
+| 20 | [CVE-2026-30911](https://nvd.nist.gov/vuln/detail/CVE-2026-30911) | Apache Airflow Core | Missing auth (HITL) | **High (8.1)** | Published |
+| 21 | [CVE-2026-32794](https://nvd.nist.gov/vuln/detail/CVE-2026-32794) | Apache Airflow (Databricks Provider) | TLS verification bypass → MitM | Medium (4.8) | Published |
+| 22 | [CVE-2026-55070](https://github.com/argoproj/argo-workflows/security/advisories/GHSA-rcgr-27rh-g56w) | argoproj/argo-workflows | Informer-cache auth-bypass fix incomplete — Lint/Create resolve templates without per-caller auth (CWE-285) | Moderate (5.3) | CVE Assigned |
+| 23 | [CVE-2026-48130](https://github.com/tektoncd/pipeline/security/advisories/GHSA-q6jr-jfqg-8m28) | tektoncd/pipeline | Hub resolver reads HTTP response body via unbounded `io.ReadAll` → OOM DoS (CWE-770) | Moderate (6.5) | CVE Assigned |
 
 ### CI/CD
 
 | # | CVE | Target | Type | Severity | Status |
 |---|-----|--------|------|----------|--------|
-| 23 | [CVE-2026-57303](https://www.jenkins.io/security/advisories/) | Jenkins Assembla plugin | XXE | **High** | Published |
-| 24 | [CVE-2026-57297](https://www.jenkins.io/security/advisories/) | Jenkins Contrast CAS plugin | Missing permission check — connection-test → credential capture / SSRF | Medium | Published |
-| 25 | [CVE-2026-57299](https://www.jenkins.io/security/advisories/) | Jenkins Contrast CAS plugin | Missing permission checks — metadata enumeration | Medium | Published |
-| 26 | [CVE-2026-57304](https://www.jenkins.io/security/advisories/) | Jenkins Assembla plugin | Missing permission check | Medium | Published |
-| 27 | [CVE-2026-57298](https://www.jenkins.io/security/advisories/) | Jenkins Contrast CAS plugin | CSRF | Medium | Published |
-| 28 | [CVE-2026-57305](https://www.jenkins.io/security/advisories/) | Jenkins Assembla plugin | CSRF | Medium | Published |
+| 24 | [CVE-2026-57303](https://www.jenkins.io/security/advisories/) | Jenkins Assembla plugin | XXE | **High** | Published |
+| 25 | [CVE-2026-57297](https://www.jenkins.io/security/advisories/) | Jenkins Contrast CAS plugin | Missing permission check — connection-test → credential capture / SSRF | Medium | Published |
+| 26 | [CVE-2026-57299](https://www.jenkins.io/security/advisories/) | Jenkins Contrast CAS plugin | Missing permission checks — metadata enumeration | Medium | Published |
+| 27 | [CVE-2026-57304](https://www.jenkins.io/security/advisories/) | Jenkins Assembla plugin | Missing permission check | Medium | Published |
+| 28 | [CVE-2026-57298](https://www.jenkins.io/security/advisories/) | Jenkins Contrast CAS plugin | CSRF | Medium | Published |
+| 29 | [CVE-2026-57305](https://www.jenkins.io/security/advisories/) | Jenkins Assembla plugin | CSRF | Medium | Published |
 
 ### libraries & frameworks
 
 | # | CVE | Target | Type | Severity | Status |
 |---|-----|--------|------|----------|--------|
-| 29 | [CVE-2026-49853](https://github.com/tornadoweb/tornado/security/advisories/GHSA-3x9g-8vmp-wqvf) | tornadoweb/tornado | `Authorization` header forwarded across cross-origin redirects in `SimpleAsyncHTTPClient` | **High (7.7)** | Published |
-| 30 | [CVE-2026-49353](https://github.com/decolua/9router/security/advisories/GHSA-6g2f-w7g3-77vf) | decolua/9router | Incomplete fix for CVE-2026-46339 — local-only access gate bypass via Host header spoofing (CWE-290) | **High (7.5)** | Published |
-| 31 | [CVE-2026-31899](https://nvd.nist.gov/vuln/detail/CVE-2026-31899) | CairoSVG | Exponential DoS — recursive amplification | **High (7.5)** | Published |
-| 32 | [CVE-2026-44840](https://github.com/dgraph-io/dgraph/security/advisories/GHSA-q2m9-6jp9-c6mc) | Dgraph | DQL injection via `checkUserPassword` GraphQL query | **High** | Published |
-| 33 | [CVE-2026-52775](https://github.com/advisories) | yeswiki/yeswiki | Authenticated SQL injection via ReactionManager | **High** | Published |
-| 34 | [CVE-2026-32809](https://www.cve.org/CVERecord?id=CVE-2026-32809) | ouch (Rust) | Symlink escape | **High (7.4)** | NVD: RESERVED |
-| 35 | [CVE-2026-45363](https://github.com/jwt/ruby-jwt/security/advisories/GHSA-c32j-vqhx-rx3x) | jwt/ruby-jwt | Empty-key HMAC bypass | 7.4 | NVD: RESERVED |
-| 36 | [CVE-2026-48022](https://github.com/advisories/GHSA-x426-x7cc-3fpc) | @hapi/wreck (npm) | Credential header leak on cross-port / cross-scheme redirect | Moderate | Published |
-| 37 | [CVE-2026-54171](https://github.com/advisories) | Excon (RubyGems) | Sensitive/risky headers not redacted on redirect | Moderate | Published |
-| 38 | [CVE-2026-33693](https://nvd.nist.gov/vuln/detail/CVE-2026-33693) | activitypub-federation-rust | SSRF — `0.0.0.0` bypass | Medium (6.5) | Published |
-| 39 | [CVE-2026-32885](https://nvd.nist.gov/vuln/detail/CVE-2026-32885) | ddev/ddev | ZipSlip | Medium (6.5) | Published |
-| 40 | [CVE-2026-8368](https://github.com/libwww-perl/libwww-perl/pull/512) | Perl `LWP::UserAgent` / `HTTP::Tiny` | Zero header strip on cross-host redirect | — | NVD: RESERVED |
-| 41 | [CVE-2026-44217](https://nvd.nist.gov/vuln/detail/CVE-2026-44217) | sse-channel (npm) | SSE injection — unsanitized fields | Moderate | Published |
-| 42 | [CVE-2026-46627](https://snailsploit.com/security-research/cves/cve-2026-46627/) | Twig (PHP) | Sandbox resource exhaustion — CPU/memory DoS | Moderate | Published |
+| 30 | [CVE-2026-49853](https://github.com/tornadoweb/tornado/security/advisories/GHSA-3x9g-8vmp-wqvf) | tornadoweb/tornado | `Authorization` header forwarded across cross-origin redirects in `SimpleAsyncHTTPClient` | **High (7.7)** | Published |
+| 31 | [CVE-2026-49353](https://github.com/decolua/9router/security/advisories/GHSA-6g2f-w7g3-77vf) | decolua/9router | Incomplete fix for CVE-2026-46339 — local-only access gate bypass via Host header spoofing (CWE-290) | **High (7.5)** | Published |
+| 32 | [CVE-2026-31899](https://nvd.nist.gov/vuln/detail/CVE-2026-31899) | CairoSVG | Exponential DoS — recursive amplification | **High (7.5)** | Published |
+| 33 | [CVE-2026-44840](https://github.com/dgraph-io/dgraph/security/advisories/GHSA-q2m9-6jp9-c6mc) | Dgraph | DQL injection via `checkUserPassword` GraphQL query | **High** | Published |
+| 34 | [CVE-2026-52775](https://github.com/advisories) | yeswiki/yeswiki | Authenticated SQL injection via ReactionManager | **High** | Published |
+| 35 | [CVE-2026-32809](https://www.cve.org/CVERecord?id=CVE-2026-32809) | ouch (Rust) | Symlink escape | **High (7.4)** | NVD: RESERVED |
+| 36 | [CVE-2026-45363](https://github.com/jwt/ruby-jwt/security/advisories/GHSA-c32j-vqhx-rx3x) | jwt/ruby-jwt | Empty-key HMAC bypass | 7.4 | NVD: RESERVED |
+| 37 | [CVE-2026-48022](https://github.com/advisories/GHSA-x426-x7cc-3fpc) | @hapi/wreck (npm) | Credential header leak on cross-port / cross-scheme redirect | Moderate | Published |
+| 38 | [CVE-2026-54171](https://github.com/advisories) | Excon (RubyGems) | Sensitive/risky headers not redacted on redirect | Moderate | Published |
+| 39 | [CVE-2026-33693](https://nvd.nist.gov/vuln/detail/CVE-2026-33693) | activitypub-federation-rust | SSRF — `0.0.0.0` bypass | Medium (6.5) | Published |
+| 40 | [CVE-2026-32885](https://nvd.nist.gov/vuln/detail/CVE-2026-32885) | ddev/ddev | ZipSlip | Medium (6.5) | Published |
+| 41 | [CVE-2026-8368](https://github.com/libwww-perl/libwww-perl/pull/512) | Perl `LWP::UserAgent` / `HTTP::Tiny` | Zero header strip on cross-host redirect | — | NVD: RESERVED |
+| 42 | [CVE-2026-44217](https://nvd.nist.gov/vuln/detail/CVE-2026-44217) | sse-channel (npm) | SSE injection — unsanitized fields | Moderate | Published |
+| 43 | [CVE-2026-46627](https://snailsploit.com/security-research/cves/cve-2026-46627/) | Twig (PHP) | Sandbox resource exhaustion — CPU/memory DoS | Moderate | Published |
 
 ### video / media platforms
 
 | # | CVE | Target | Type | Severity | Status |
 |---|-----|--------|------|----------|--------|
-| 43 | [CVE-2026-43884](https://nvd.nist.gov/vuln/detail/CVE-2026-43884) | AVideo | SSRF protection bypass via DNS rebinding | **High** | Published |
-| 44 | [CVE-2026-43881](https://nvd.nist.gov/vuln/detail/CVE-2026-43881) | AVideo | Unauthenticated user enumeration via `isCompany` parameter | Medium (5.3) | Published |
-| 45 | [CVE-2026-45619](https://github.com/advisories) | AVideo | CVE-2026-43884 incomplete fix — 6+ `isSSRFSafeURL()` call sites discard `$resolvedIP` out-param | — | Published |
-| 46 | [CVE-2026-45620](https://github.com/advisories/GHSA-vpfx-pxqw-2w79) | AVideo | CVE-2026-43881 incomplete fix | — | Published |
+| 44 | [CVE-2026-43884](https://nvd.nist.gov/vuln/detail/CVE-2026-43884) | AVideo | SSRF protection bypass via DNS rebinding | **High** | Published |
+| 45 | [CVE-2026-43881](https://nvd.nist.gov/vuln/detail/CVE-2026-43881) | AVideo | Unauthenticated user enumeration via `isCompany` parameter | Medium (5.3) | Published |
+| 46 | [CVE-2026-45619](https://github.com/advisories) | AVideo | CVE-2026-43884 incomplete fix — 6+ `isSSRFSafeURL()` call sites discard `$resolvedIP` out-param | — | Published |
+| 47 | [CVE-2026-45620](https://github.com/advisories/GHSA-vpfx-pxqw-2w79) | AVideo | CVE-2026-43881 incomplete fix | — | Published |
 
 ### wordpress plugins
 
 | # | CVE | Target | Type | Severity | Status |
 |---|-----|--------|------|----------|--------|
-| 47 | [CVE-2026-3596](https://nvd.nist.gov/vuln/detail/CVE-2026-3596) | Riaxe Product Customizer | Missing auth → priv esc | **Critical (9.8)** | Published |
-| 48 | [CVE-2026-1313](https://nvd.nist.gov/vuln/detail/CVE-2026-1313) | MimeTypes Link Icons | SSRF | **High (8.3)** | Published |
-| 49 | [CVE-2026-3599](https://nvd.nist.gov/vuln/detail/CVE-2026-3599) | Riaxe Product Customizer | Unauthenticated SQLi | **High (7.5)** | Published |
-| 50 | [CVE-2025-9776](https://nvd.nist.gov/vuln/detail/CVE-2025-9776) | CatFolders | SQLi via CSV import | Medium (6.5) | Published |
-| 51 | [CVE-2025-12163](https://nvd.nist.gov/vuln/detail/CVE-2025-12163) | Omnipress | Stored XSS | Medium (6.4) | Published |
-| 52 | [CVE-2026-2717](https://nvd.nist.gov/vuln/detail/CVE-2026-2717) | HTTP Headers | CRLF injection | Medium (5.5) | Published |
-| 53 | [CVE-2026-0811](https://nvd.nist.gov/vuln/detail/CVE-2026-0811) | Advanced CF7 DB | CSRF → form deletion | Medium (5.4) | Published |
-| 54 | [CVE-2026-3594](https://nvd.nist.gov/vuln/detail/CVE-2026-3594) | Riaxe Product Customizer | Info disclosure — `/orders` | Medium (5.3) | Published |
-| 55 | [CVE-2026-3595](https://nvd.nist.gov/vuln/detail/CVE-2026-3595) | Riaxe Product Customizer | Unauthenticated user deletion | Medium (5.3) | Published |
-| 56 | [CVE-2026-1314](https://nvd.nist.gov/vuln/detail/CVE-2026-1314) | 3D FlipBook | Missing auth | Medium (5.3) | Published |
-| 57 | [CVE-2025-11171](https://nvd.nist.gov/vuln/detail/CVE-2025-11171) | Chartify | Missing auth — admin function | Medium (5.3) | Published |
-| 58 | [CVE-2025-11174](https://nvd.nist.gov/vuln/detail/CVE-2025-11174) | Document Library Lite | Missing auth → info disclosure | Medium (5.3) | Published |
-| 59 | [CVE-2025-12030](https://nvd.nist.gov/vuln/detail/CVE-2025-12030) | ACF to REST API | IDOR | Medium (4.3) | Published |
-| 60 | [CVE-2026-0814](https://nvd.nist.gov/vuln/detail/CVE-2026-0814) | Advanced CF7 DB | Missing auth — subscriber+ export | Medium (4.3) | Published |
-| 61 | [CVE-2026-1208](https://nvd.nist.gov/vuln/detail/CVE-2026-1208) | Welcart | CSRF → settings update | Medium (4.3) | Published |
-| 62 | [CVE-2026-15298](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/telsender) | TelSender | Unauthenticated stored XSS via Telegram chat title | High (7.2) | Published |
+| 48 | [CVE-2026-3596](https://nvd.nist.gov/vuln/detail/CVE-2026-3596) | Riaxe Product Customizer | Missing auth → priv esc | **Critical (9.8)** | Published |
+| 49 | [CVE-2026-1313](https://nvd.nist.gov/vuln/detail/CVE-2026-1313) | MimeTypes Link Icons | SSRF | **High (8.3)** | Published |
+| 50 | [CVE-2026-3599](https://nvd.nist.gov/vuln/detail/CVE-2026-3599) | Riaxe Product Customizer | Unauthenticated SQLi | **High (7.5)** | Published |
+| 51 | [CVE-2025-9776](https://nvd.nist.gov/vuln/detail/CVE-2025-9776) | CatFolders | SQLi via CSV import | Medium (6.5) | Published |
+| 52 | [CVE-2025-12163](https://nvd.nist.gov/vuln/detail/CVE-2025-12163) | Omnipress | Stored XSS | Medium (6.4) | Published |
+| 53 | [CVE-2026-2717](https://nvd.nist.gov/vuln/detail/CVE-2026-2717) | HTTP Headers | CRLF injection | Medium (5.5) | Published |
+| 54 | [CVE-2026-0811](https://nvd.nist.gov/vuln/detail/CVE-2026-0811) | Advanced CF7 DB | CSRF → form deletion | Medium (5.4) | Published |
+| 55 | [CVE-2026-3594](https://nvd.nist.gov/vuln/detail/CVE-2026-3594) | Riaxe Product Customizer | Info disclosure — `/orders` | Medium (5.3) | Published |
+| 56 | [CVE-2026-3595](https://nvd.nist.gov/vuln/detail/CVE-2026-3595) | Riaxe Product Customizer | Unauthenticated user deletion | Medium (5.3) | Published |
+| 57 | [CVE-2026-1314](https://nvd.nist.gov/vuln/detail/CVE-2026-1314) | 3D FlipBook | Missing auth | Medium (5.3) | Published |
+| 58 | [CVE-2025-11171](https://nvd.nist.gov/vuln/detail/CVE-2025-11171) | Chartify | Missing auth — admin function | Medium (5.3) | Published |
+| 59 | [CVE-2025-11174](https://nvd.nist.gov/vuln/detail/CVE-2025-11174) | Document Library Lite | Missing auth → info disclosure | Medium (5.3) | Published |
+| 60 | [CVE-2025-12030](https://nvd.nist.gov/vuln/detail/CVE-2025-12030) | ACF to REST API | IDOR | Medium (4.3) | Published |
+| 61 | [CVE-2026-0814](https://nvd.nist.gov/vuln/detail/CVE-2026-0814) | Advanced CF7 DB | Missing auth — subscriber+ export | Medium (4.3) | Published |
+| 62 | [CVE-2026-1208](https://nvd.nist.gov/vuln/detail/CVE-2026-1208) | Welcart | CSRF → settings update | Medium (4.3) | Published |
+| 63 | [CVE-2026-15298](https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/telsender) | TelSender | Unauthenticated stored XSS via Telegram chat title | High (7.2) | Published |
 
 ---
 
 ## expanded attribution corpus
 
-The CVE table above contains the core SnailSploit inventory plus the 16th WordPress finding. The following **9 additional CVEs** were identified through independent attribution sources (vendor/CNA/upstream/GitHub advisory records) during the broader reconciliation pass. They are included in the **71-CVE public attribution total** and are intentionally separated here so the provenance of the expanded count is explicit.
+The CVE table above contains the core SnailSploit inventory plus the 16th WordPress finding. The following **9 additional CVEs** were identified through independent attribution sources (vendor/CNA/upstream/GitHub advisory records) during the broader reconciliation pass. They are included in the **92-CVE public attribution total** and are intentionally separated here so the provenance of the expanded count is explicit.
 
 | CVE | Target | Attribution / source trail | Status |
 |------|--------|---------------------------|--------|
@@ -135,21 +136,21 @@ The CVE table above contains the core SnailSploit inventory plus the 16th WordPr
 | [CVE-2026-19017](https://app.opencve.io/cve/CVE-2026-19017) | HashiCorp Consul | CNA record explicitly credits Kai Aizen / SnailSploit | Confirmed |
 | [CVE-2026-60087](https://www.vulncheck.com/advisories/praisonai-before-tool-approval-cache-bypass) | PraisonAI | Independent advisory databases credit SnailSploit | Confirmed |
 
-**Attribution note:** “71” is the expanded public-attribution corpus, not the number currently enumerated in the SnailSploit GitHub repository alone. The GitHub repository remains a 61-CVE core inventory; the expanded total incorporates independently located CVE records and the additional WordPress finding.
+**Attribution note:** "92" is the expanded public-attribution corpus, not the number currently enumerated in the SnailSploit GitHub repository alone. The GitHub repository remains a 63-CVE core inventory; the expanded total incorporates independently located CVE records and the additional WordPress finding.
 
 ---
 
 ## linux kernel patches
 
-five patches mainlined through the standard kernel maintainer process — three with assigned CVEs.
+five patches mainlined through the standard kernel maintainer process — four with assigned CVEs.
 
 | Subsystem | Fix | CVE | Status |
 |-----------|-----|-----|--------|
 | `io_uring/zcrx` | Fix `user_ref` race between scrub and refill → double-free → OOB write | CVE-2026-43121 | Mainlined 7.0-rc1 |
+| `Bluetooth/hci_conn` | UAF in `create_big_sync` and `create_big_complete` | CVE-2026-46111 | Mainlined |
 | `net/rtnetlink` | Zero `ifla_vf_broadcast` to avoid stack infoleak | CVE-2026-46132 | Mainlined |
 | `RDMA/ionic` | Bound `node_desc` sysfs read with `%.64s` — unbounded `%s` OOB read | CVE-2026-53371 | Mainlined |
 | `net/tipc` | `tipc_mon_peer_up`/`down`/`remove_peer` UAF | — | Mainlined |
-| `Bluetooth/hci_conn` | UAF in `create_big_sync` and `create_big_complete` | — | Mainlined |
 
 all patches on [lore.kernel.org →](https://lore.kernel.org/all/?q=Kai+Aizen)
 
@@ -218,17 +219,17 @@ published at [snailsploit.com](https://snailsploit.com), [Hakin9 Magazine](https
 
 | Metric | Count |
 |--------|-------|
-| Publicly attributable CVEs | 71 |
+| Publicly attributable CVEs | 92 |
 | — critical | 5 |
 | — high | 18 |
 | Distinct targets | 27 |
 | Mainlined linux kernel patches | 5 |
-| Kernel CVEs | 3 |
+| Kernel CVEs | 4 |
 | GHSAs / vendor disclosures / bounties | 5+ |
 | Published frameworks | 3 (AATMF, SEF, P.R.O.M.P.T) |
 | Open-source tools | 11 |
 
-> **cross-reference note:** CVE-2026-43121, CVE-2026-46132, and CVE-2026-53371 each appear once in the CVE table and once in the kernel patches section — same finding, listed in both places for discoverability. CVE-2026-48022 (@hapi/wreck) appears once in the CVE table; its GHSA is the same finding.
+> **cross-reference note:** CVE-2026-43121, CVE-2026-46111, CVE-2026-46132, and CVE-2026-53371 each appear once in the CVE table and once in the kernel patches section — same finding, listed in both places for discoverability. CVE-2026-48022 (@hapi/wreck) appears once in the CVE table; its GHSA is the same finding.
 
 **sources of record:** [Wordfence](https://www.wordfence.com/threat-intel/vulnerabilities/researchers/kai-aizen) · [GHSA Credit](https://github.com/advisories?query=credit%3ASnailSploit) · [GitHub](https://github.com/SnailSploit) · [lore.kernel.org](https://lore.kernel.org/all/?q=Kai+Aizen)
 
