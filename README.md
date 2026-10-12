@@ -2,11 +2,11 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=3500&pause=1200&color=E07A4A&background=00000000&center=true&vCenter=true&width=520&lines=same+attack.+different+substrate.;adversarial+ai+research+%26+llm+red+teaming;kernel+security+%26+CVE+discovery;79+published+CVEs+and+counting)](https://snailsploit.com)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=1000&color=E07A4A&background=00000000&center=true&vCenter=true&width=560&lines=same+attack.+different+substrate.;adversarial+AI+%26+LLM+red+teaming;kernel+security+%26+CVE+discovery;79+published+CVEs+and+counting;5+linux+kernel+mainline+patches)](https://snailsploit.com)
 
 **adversarial ai research · llm red teaming · kernel · vulnerability research**
 
-[![Website](https://img.shields.io/badge/snailsploit.com-0E0E0F?style=flat-square&logo=astro&logoColor=E9E7E1&labelColor=0E0E0F)](https://snailsploit.com) [![The Jailbreak Chef](https://img.shields.io/badge/the_jailbreak_chef-0E0E0F?style=flat-square&logo=fireship&logoColor=E9E7E1&labelColor=0E0E0F)](https://thejailbreakchef.com) [![LinkedIn](https://img.shields.io/badge/linkedin-0E0E0F?style=flat-square&logo=linkedin&logoColor=E9E7E1&labelColor=0E0E0F)](https://linkedin.com/in/kaiaizen) [![Medium](https://img.shields.io/badge/medium-0E0E0F?style=flat-square&logo=medium&logoColor=E9E7E1&labelColor=0E0E0F)](https://medium.com/@snailsploit)
+[![Website](https://img.shields.io/badge/snailsploit.com-050505?style=flat-square&logo=astro&logoColor=E9E7E1&labelColor=050505)](https://snailsploit.com) [![The Jailbreak Chef](https://img.shields.io/badge/the_jailbreak_chef-050505?style=flat-square&logo=fireship&logoColor=E9E7E1&labelColor=050505)](https://thejailbreakchef.com) [![LinkedIn](https://img.shields.io/badge/linkedin-050505?style=flat-square&logo=linkedin&logoColor=E9E7E1&labelColor=050505)](https://linkedin.com/in/kaiaizen) [![Medium](https://img.shields.io/badge/medium-050505?style=flat-square&logo=medium&logoColor=E9E7E1&labelColor=050505)](https://medium.com/@snailsploit)
 
 </div>
 
@@ -14,11 +14,11 @@
 
 <div align="center">
 
-![CVEs](https://img.shields.io/badge/CVEs-79-E07A4A?style=for-the-badge&labelColor=0E0E0F&logo=shield&logoColor=E07A4A)
-![Critical](https://img.shields.io/badge/Critical-7-cc0000?style=for-the-badge&labelColor=0E0E0F)
-![High](https://img.shields.io/badge/High-25-e05c00?style=for-the-badge&labelColor=0E0E0F)
-![Kernel](https://img.shields.io/badge/Linux%20Kernel-6-1a7f37?style=for-the-badge&labelColor=0E0E0F&logo=linux&logoColor=white)
-![AI](https://img.shields.io/badge/AI%2FLLMs-17-7c3aed?style=for-the-badge&labelColor=0E0E0F)
+![CVEs](https://img.shields.io/badge/CVEs-79-E07A4A?style=for-the-badge&labelColor=050505&logo=shield&logoColor=E07A4A)
+![Critical](https://img.shields.io/badge/Critical-7-cc0000?style=for-the-badge&labelColor=050505)
+![High](https://img.shields.io/badge/High-25-e05c00?style=for-the-badge&labelColor=050505)
+![Kernel](https://img.shields.io/badge/Linux%20Kernel-6-1a7f37?style=for-the-badge&labelColor=050505&logo=linux&logoColor=white)
+![AI](https://img.shields.io/badge/AI%2FLLMs-17-7c3aed?style=for-the-badge&labelColor=050505)
 
 </div>
 
@@ -26,31 +26,40 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=SnailSploit&show_icons=true&hide_border=true&bg_color=0E0E0F&title_color=E07A4A&icon_color=E07A4A&text_color=E9E7E1&count_private=true&rank_icon=github" />
+[![trophy](https://github-profile-trophy.vercel.app/?username=SnailSploit&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&column=7)](https://github.com/SnailSploit)
+
+</div>
+
+<br>
+
+<div align="center">
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=SnailSploit&show_icons=true&hide_border=true&bg_color=050505&title_color=E07A4A&icon_color=E07A4A&text_color=E9E7E1&count_private=true&rank_icon=github" />
 &nbsp;
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SnailSploit&layout=compact&hide_border=true&bg_color=0E0E0F&title_color=E07A4A&text_color=E9E7E1&langs_count=7&hide=html,css" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SnailSploit&layout=compact&hide_border=true&bg_color=050505&title_color=E07A4A&text_color=E9E7E1&langs_count=7&hide=html,css" />
+</div>
+
+<div align="center">
+
+![Streak](https://streak-stats.demolab.com?user=SnailSploit&theme=dark&hide_border=true&background=050505&stroke=1a1a1a&ring=E07A4A&fire=E07A4A&currStreakNum=E9E7E1&sideNums=E9E7E1&currStreakLabel=E07A4A&sideLabels=555555&dates=3a3a3a)
 
 </div>
 
 <div align="center">
 
-![Streak](https://streak-stats.demolab.com?user=SnailSploit&theme=dark&hide_border=true&background=0E0E0F&stroke=333333&ring=E07@4A&fire=E07A4A&currStreakNum=E9E7E1&sideNums=E9E7E1&currStreakLabel=E07A4A&sideLabels=888888&dates=555555)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=SnailSploit&bg_color=050505&color=E07A4A&line=C05020&point=E07A4A&area=true&area_color=1a0500&hide_border=true&radius=4)](https://github.com/SnailSploit)
 
 </div>
 
 ---
 
-same attack. different substrate.
-
-snailsploit is an independent adversarial research group — vulnerability research, framework development, and offensive tooling across kernels, language models, and everything between them.
-
----
-
-# Complete CVE Corpus (Kai Aizen)
-
-Updated against master portfolio digest (2026-10-12). Joint findings with Avraham Shemesh marked. Reserved/unpublished noted. Rejected/dup omitted.
+## ▸ cve research
 
 **Severity:** 🔴 Critical &nbsp;|&nbsp; 🟠 High &nbsp;|&nbsp; 🟡 Medium &nbsp;|&nbsp; 🔵 Low &nbsp;|&nbsp; ⚫ Unknown &nbsp;&nbsp;&nbsp;&nbsp; **Status:** ✅ Published/Mainlined &nbsp;|&nbsp; 🔒 Pending
+
+<details>
+<summary><strong>full CVE table — 79 entries (updated 2026-10-12)</strong></summary>
+
+<br>
 
 | # | CVE | Target | Finding | Sev | Status |
 | -: | :--- | :--- | :--- | :-: | :--- |
@@ -134,9 +143,11 @@ Updated against master portfolio digest (2026-10-12). Joint findings with Avraha
 | 78 | [CVE-2026-3595](https://www.cve.org/CVERecord?id=CVE-2026-3595) | WordPress - Riaxe Product Customizer | Unauthenticated arbitrary user deletion | 🟡 | ✅ Published |
 | 79 | [CVE-2026-15298](https://www.cve.org/CVERecord?id=CVE-2026-15298) | WordPress - TelSender | Unauthenticated stored XSS | 🟠 | ✅ Published |
 
+</details>
+
 ---
 
-## frameworks & tooling
+## ▸ frameworks & tooling
 
 | Project | Description |
 |---------|-------------|
@@ -157,7 +168,7 @@ Updated against master portfolio digest (2026-10-12). Joint findings with Avraha
 
 ---
 
-## research
+## ▸ research
 
 published at [snailsploit.com](https://snailsploit.com), [Hakin9 Magazine](https://hakin9.org), and [Medium](https://medium.com/@snailsploit).
 
@@ -186,7 +197,7 @@ published at [snailsploit.com](https://snailsploit.com), [Hakin9 Magazine](https
 
 <div align="center">
 
-[![snailsploit](https://img.shields.io/badge/read_the_research-snailsploit.com-E07A4A?style=flat-square&labelColor=0E0E0F)](https://snailsploit.com)
+[![snailsploit](https://img.shields.io/badge/read_the_research-snailsploit.com-E07A4A?style=flat-square&labelColor=050505)](https://snailsploit.com)
 
 `same attack. different substrate.`
 
