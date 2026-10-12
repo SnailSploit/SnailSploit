@@ -1,10 +1,23 @@
+<sub><code>snailsploit · adversarial research group · tel aviv · est. 2022 · threat level: active</code></sub>
+
 [![snailsploit — same attack. different substrate.](https://github.com/SnailSploit/SnailSploit/raw/main/banner.png)](https://snailsploit.com)
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=1000&color=E07A4A&background=00000000&center=true&vCenter=true&width=560&lines=same+attack.+different+substrate.;adversarial+AI+%26+LLM+red+teaming;kernel+security+%26+CVE+discovery;79+published+CVEs+and+counting;5+linux+kernel+mainline+patches)](https://snailsploit.com)
+```bash
+$ whoami
+kai aizen — adversarial ai researcher · linux kernel contributor · cve hunter
+$ cat /proc/threat-surface
+CVEs: 79  |  Critical: 7  |  High: 25  |  Kernel: 6  |  AI/LLM: 17
+$ ls /usr/lib/frameworks/
+AATMF_v3.1/  AGT/  SEF/  P.R.O.M.P.T/
+$ echo $CURRENT_OPS
+OlympicGames  FLAWLESS  RBME-Theory  CLS-Gap-Weapon
+```
 
-**adversarial ai research · llm red teaming · kernel · vulnerability research**
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=2800&pause=800&color=E07A4A&background=00000000&center=true&vCenter=true&width=640&lines=same+attack.+different+substrate.;adversarial+AI+%26+LLM+red+teaming;kernel+security+%26+CVE+discovery;79+published+CVEs+and+counting;6+kernel+mainline+patches+accepted)](https://snailsploit.com)
+
+**adversarial ai research &nbsp;·&nbsp; llm red teaming &nbsp;·&nbsp; kernel &nbsp;·&nbsp; vulnerability research**
 
 [![Website](https://img.shields.io/badge/snailsploit.com-050505?style=flat-square&logo=astro&logoColor=E9E7E1&labelColor=050505)](https://snailsploit.com) [![The Jailbreak Chef](https://img.shields.io/badge/the_jailbreak_chef-050505?style=flat-square&logo=fireship&logoColor=E9E7E1&labelColor=050505)](https://thejailbreakchef.com) [![LinkedIn](https://img.shields.io/badge/linkedin-050505?style=flat-square&logo=linkedin&logoColor=E9E7E1&labelColor=050505)](https://linkedin.com/in/kaiaizen) [![Medium](https://img.shields.io/badge/medium-050505?style=flat-square&logo=medium&logoColor=E9E7E1&labelColor=050505)](https://medium.com/@snailsploit)
 
@@ -24,19 +37,16 @@
 
 <br>
 
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=SnailSploit&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&column=7)](https://github.com/SnailSploit)
-
-</div>
-
-<br>
-
-<div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=SnailSploit&show_icons=true&hide_border=true&bg_color=050505&title_color=E07A4A&icon_color=E07A4A&text_color=E9E7E1&count_private=true&rank_icon=github" />
-&nbsp;
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SnailSploit&layout=compact&hide_border=true&bg_color=050505&title_color=E07A4A&text_color=E9E7E1&langs_count=7&hide=html,css" />
-</div>
+<table align="center" width="100%">
+<tr>
+<td align="center" valign="top" width="55%">
+<img src="https://github-readme-stats.vercel.app/api?username=SnailSploit&show_icons=true&hide_border=true&bg_color=050505&title_color=E07A4A&icon_color=E07A4A&text_color=E9E7E1&count_private=true&rank_icon=github" />
+</td>
+<td align="center" valign="top" width="45%">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SnailSploit&layout=compact&hide_border=true&bg_color=050505&title_color=E07A4A&text_color=E9E7E1&langs_count=7&hide=html,css" />
+</td>
+</tr>
+</table>
 
 <div align="center">
 
@@ -49,6 +59,33 @@
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=SnailSploit&bg_color=050505&color=E07A4A&line=C05020&point=E07A4A&area=true&area_color=1a0500&hide_border=true&radius=4)](https://github.com/SnailSploit)
 
 </div>
+
+---
+
+## ▸ kernel mainline
+
+> *6 patches accepted into the Linux kernel mainline — io\_uring · bluetooth · iommufd · rtnetlink · rdma · usb gadget*
+
+| CVE | Subsystem | Finding | Status |
+|:----|:----------|:--------|:-------|
+| [CVE-2026-43121](https://www.cve.org/CVERecord?id=CVE-2026-43121) | `io_uring/zcrx` | user\_ref race → double-free → OOB write | ✅ v6.18.16 |
+| [CVE-2026-46111](https://www.cve.org/CVERecord?id=CVE-2026-46111) | `bluetooth/hci_conn` | use-after-free in big sync create/complete | ✅ mainlined |
+| [CVE-2026-64293](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=be93d186ae88a92e7) | `iommufd/veventq` | high severity flaw | ✅ mainlined |
+| [CVE-2026-46132](https://www.cve.org/CVERecord?id=CVE-2026-46132) | `net/rtnetlink` | ifla\_vf\_broadcast kernel stack leak | ✅ mainlined |
+| [CVE-2026-53371](https://lkml.iu.edu/hypermail/linux/kernel/2604.1/03379.html) | `rdma/ionic` | unbounded %s → OOB read via sysfs | ✅ mainlined |
+| [CVE-2026-64233](https://www.cve.org/CVERecord?id=CVE-2026-64233) | `usb: gadget: uvc` | medium severity | ✅ mainlined |
+
+---
+
+## ▸ active operations
+
+<table>
+<tr><td>🟢&nbsp;&nbsp;<b>LIVE</b></td><td><b>OlympicGames / FLAWLESS</b></td><td><i>bug bounty automation engine · Claude Code SDK · agentic kill chain</i></td></tr>
+<tr><td>🟢&nbsp;&nbsp;<b>LIVE</b></td><td><b>AATMF v3.1</b></td><td><i>240+ techniques · 2,152+ procedures · on OWASP GenAI Security 2026 roadmap</i></td></tr>
+<tr><td>🟢&nbsp;&nbsp;<b>LIVE</b></td><td><b>CLS Gap Weapon</b></td><td><i>CVE hunting via CVE Likelihood Scores · automated triage pipeline</i></td></tr>
+<tr><td>🟠&nbsp;&nbsp;<b>WIP</b></td><td><b>RBME Theory</b></td><td><i>neuroscience × trauma encoding × AI memory architecture (w/ Shemesh)</i></td></tr>
+<tr><td>🔵&nbsp;&nbsp;<b>OUT</b></td><td><b>Adversarial Minds</b></td><td><i>book on adversarial AI · free PDF at snailsploit.com</i></td></tr>
+</table>
 
 ---
 
