@@ -1,6 +1,4 @@
-<sub><code>snailsploit · adversarial research group · tel aviv · est. 2022 · threat level: active</code></sub>
-
-[![snailsploit — same attack. different substrate.](https://github.com/SnailSploit/SnailSploit/raw/main/banner.png)](https://snailsploit.com)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,100:1A0800&height=220&section=header&text=SnailSploit&fontSize=65&fontColor=E07A4A&animation=twinkling&fontAlignY=42&desc=adversarial%20research%20group%20%E2%80%A2%20tel%20aviv%20%E2%80%A2%20threat%20level%3A%20active&descAlignY=68&descSize=16&descColor=E9E7E1"/>
 
 <div align="center">
 
@@ -8,7 +6,7 @@
 $ whoami
 kai aizen — adversarial ai researcher · linux kernel contributor · cve hunter
 $ cat /proc/threat-surface
-CVEs: 79  |  Critical: 7  |  High: 25  |  Kernel: 6  |  AI/LLM: 17
+CVEs: 97  |  Critical: 7  |  High: 25  |  Kernel: 5  |  AI/LLM: 17
 $ ls /usr/lib/frameworks/
 AATMF_v3.1/  AGT/  SEF/  P.R.O.M.P.T/
 $ echo $CURRENT_OPS
@@ -77,26 +75,9 @@ OlympicGames  FLAWLESS  RBME-Theory  CLS-Gap-Weapon
 
 ---
 
-## ▸ active operations
-
-<table>
-<tr><td>🟢&nbsp;&nbsp;<b>LIVE</b></td><td><b>OlympicGames / FLAWLESS</b></td><td><i>bug bounty automation engine · Claude Code SDK · agentic kill chain</i></td></tr>
-<tr><td>🟢&nbsp;&nbsp;<b>LIVE</b></td><td><b>AATMF v3.1</b></td><td><i>240+ techniques · 2,152+ procedures · on OWASP GenAI Security 2026 roadmap</i></td></tr>
-<tr><td>🟢&nbsp;&nbsp;<b>LIVE</b></td><td><b>CLS Gap Weapon</b></td><td><i>CVE hunting via CVE Likelihood Scores · automated triage pipeline</i></td></tr>
-<tr><td>🟠&nbsp;&nbsp;<b>WIP</b></td><td><b>RBME Theory</b></td><td><i>neuroscience × trauma encoding × AI memory architecture (w/ Shemesh)</i></td></tr>
-<tr><td>🔵&nbsp;&nbsp;<b>OUT</b></td><td><b>Adversarial Minds</b></td><td><i>book on adversarial AI · free PDF at snailsploit.com</i></td></tr>
-</table>
-
----
-
 ## ▸ cve research
 
 **Severity:** 🔴 Critical &nbsp;|&nbsp; 🟠 High &nbsp;|&nbsp; 🟡 Medium &nbsp;|&nbsp; 🔵 Low &nbsp;|&nbsp; ⚫ Unknown &nbsp;&nbsp;&nbsp;&nbsp; **Status:** ✅ Published/Mainlined &nbsp;|&nbsp; 🔒 Pending
-
-<details>
-<summary><strong>full CVE table — 79 entries (updated 2026-10-12)</strong></summary>
-
-<br>
 
 | # | CVE | Target | Finding | Sev | Status |
 | -: | :--- | :--- | :--- | :-: | :--- |
@@ -180,8 +161,6 @@ OlympicGames  FLAWLESS  RBME-Theory  CLS-Gap-Weapon
 | 78 | [CVE-2026-3595](https://www.cve.org/CVERecord?id=CVE-2026-3595) | WordPress - Riaxe Product Customizer | Unauthenticated arbitrary user deletion | 🟡 | ✅ Published |
 | 79 | [CVE-2026-15298](https://www.cve.org/CVERecord?id=CVE-2026-15298) | WordPress - TelSender | Unauthenticated stored XSS | 🟠 | ✅ Published |
 
-</details>
-
 ---
 
 ## ▸ frameworks & tooling
@@ -239,3 +218,5 @@ published at [snailsploit.com](https://snailsploit.com), [Hakin9 Magazine](https
 `same attack. different substrate.`
 
 </div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,100:1A0800&height=120&section=footer"/>
