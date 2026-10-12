@@ -77,18 +77,6 @@ OlympicGames  FLAWLESS  RBME-Theory  CLS-Gap-Weapon
 
 ---
 
-## ▸ active operations
-
-<table>
-<tr><td>🟢&nbsp;&nbsp;<b>LIVE</b></td><td><b>OlympicGames / FLAWLESS</b></td><td><i>bug bounty automation engine · Claude Code SDK · agentic kill chain</i></td></tr>
-<tr><td>🟢&nbsp;&nbsp;<b>LIVE</b></td><td><b>AATMF v3.1</b></td><td><i>240+ techniques · 2,152+ procedures · on OWASP GenAI Security 2026 roadmap</i></td></tr>
-<tr><td>🟢&nbsp;&nbsp;<b>LIVE</b></td><td><b>CLS Gap Weapon</b></td><td><i>CVE hunting via CVE Likelihood Scores · automated triage pipeline</i></td></tr>
-<tr><td>🟠&nbsp;&nbsp;<b>WIP</b></td><td><b>RBME Theory</b></td><td><i>neuroscience × trauma encoding × AI memory architecture (w/ Shemesh)</i></td></tr>
-<tr><td>🔵&nbsp;&nbsp;<b>OUT</b></td><td><b>Adversarial Minds</b></td><td><i>book on adversarial AI · free PDF at snailsploit.com</i></td></tr>
-</table>
-
----
-
 ## ▸ cve research
 
 **Severity:** 🔴 Critical &nbsp;|&nbsp; 🟠 High &nbsp;|&nbsp; 🟡 Medium &nbsp;|&nbsp; 🔵 Low &nbsp;|&nbsp; ⚫ Unknown &nbsp;&nbsp;&nbsp;&nbsp; **Status:** ✅ Published/Mainlined &nbsp;|&nbsp; 🔒 Pending
