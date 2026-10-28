@@ -2,16 +2,7 @@
 
 <div align="center">
 
-```bash
-$ whoami
-kai aizen — adversarial ai researcher · linux kernel contributor · cve hunter
-$ cat /proc/threat-surface
-CVEs: 97  |  Critical: 7  |  High: 25  |  Kernel: 5  |  AI/LLM: 17
-$ ls /usr/lib/frameworks/
-AATMF_v3.1/  AGT/  SEF/  P.R.O.M.P.T/
-$ echo $CURRENT_OPS
-OlympicGames  FLAWLESS  RBME-Theory  CLS-Gap-Weapon
-```
+
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=2800&pause=800&color=E07A4A&background=00000000&center=true&vCenter=true&width=640&lines=same+attack.+different+substrate.;adversarial+AI+%26+LLM+red+teaming;kernel+security+%26+CVE+discovery;79+published+CVEs+and+counting;6+kernel+mainline+patches+accepted)](https://snailsploit.com)
 
